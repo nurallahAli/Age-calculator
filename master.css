@@ -1,0 +1,96 @@
+/* Start Global Rules */
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  /* End Global Rules */
+#container .btn,
+#container #child{
+  background-color: #0100DA;
+  width: 400px;
+  height: 50px;
+  color: #fff;
+  font-size: 21px;
+  border: none;
+}
+#container .btn{
+  text-align: center;
+  padding-top: 16px;
+}
+#container #child{background-color: #f46016;}
+#container #child p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12px;
+}
+#container table{
+  background-color: white;
+  width: 400px;
+  height: 50px;
+  color: black;
+  font-size: 21px;
+  border: 1px solid #ccc;
+}
+#container table td{
+    padding: 20px 10px;
+    border-bottom: 1px solid #ccc;
+}
+#container table td.td{
+  border-left: 1px solid #ccc;
+    background-color: #EEEEEE;
+}
+#container table td.row{
+  background-color: azure;
+}
+@media(max-width: 767px){
+  #container #child,
+  #container .btn{
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+  }
+  #container .btn{
+    padding-top: 13px;
+  }
+  #container table{
+    width: 300px;
+  }
+  #container table td{
+    font-size: 15px;
+  }
+}
